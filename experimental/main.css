@@ -1,0 +1,90 @@
+/* Header */
+
+.WordSection1 {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-align-items: -moz-flex-end;
+  -webkit-align-items: -webkit-flex-end;
+  -ms-align-items: -ms-flex-end;
+  align-items: flex-end;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  background-color: #1f1815;
+  background-attachment: scroll, scroll;
+  background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+  background-position: top left, top left;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 150%;
+  color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  left: 0;
+  padding: 8em 3em;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 25%;
+}
+
+.WordSection1 > * {
+  -moz-flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.WordSection1 > .inner {
+  -moz-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  margin: 0 0 2em 0;
+}
+
+.WordSection1 strong,
+.WordSection1 b {
+  color: #ffffff;
+}
+
+.WordSection1 h2,
+.WordSection1 h3,
+.WordSection1 h4,
+.WordSection1 h5,
+.WordSection1 h6 {
+  color: #ffffff;
+  font-size: 1.15em;
+}
+
+.WordSection1 h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.75em;
+  line-height: 1.75em;
+  margin: 0;
+}
+
+.WordSection1 .image.avatar {
+  margin: 0 0 1em 0;
+  width: 6.25em;
+}
+
+/* Main */
+
+.WordSection2,
+.WordSection3,
+.WordSection4,
+.WordSection5,
+.WordSection6,
+.WordSection7,
+.WordSection8,
+.WordSection9 {
+  margin-left: 30%;
+  padding: 6em 3em 3em 3em;
+}
