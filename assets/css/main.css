@@ -2698,11 +2698,11 @@ input[type="button"]:disabled,
   color: rgba(255, 255, 255, 0.5);
   height: 100%;
   left: 0;
-  padding: 8em 4em;
+  padding: 8em 3em;
   position: fixed;
   text-align: right;
   top: 0;
-  width: 30%;
+  width: 25%;
 }
 
 #header > * {
@@ -2786,10 +2786,10 @@ input[type="button"]:disabled,
 /* Main */
 
 #main {
-  margin-left: 30%;
-  max-width: 58em;
+  margin-left: 25%;
+  max-width: 75%;
   padding: 4em 4em 4em 4em;
-  width: calc(100% - 30%);
+  width: calc(100% - 25%);
 }
 
 #nav {
@@ -2805,8 +2805,8 @@ input[type="button"]:disabled,
 }
 @media screen and (min-width: 980px) {
   #nav {
-    margin-left: 30%;
-    width: calc(100% - 30%);
+    margin-left: 25%;
+    width: calc(100% - 25%);
   }
 }
 
