@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
 html,
 body,
 div,
@@ -197,8 +199,8 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #57068c;
-  text-decoration: none;
+  color: #57068c !important;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -367,7 +369,7 @@ pre code {
   color: rgba(255, 255, 255, 0.5);
   height: 100%;
   left: 0;
-  padding: 8em 3em;
+  padding: 7em 2.5em;
   position: fixed;
   text-align: right;
   top: 0;
@@ -393,7 +395,7 @@ pre code {
 .WordSection1 .MsoTitle,
 .WordSection1 b {
   color: #ffffff;
-  font-size: 1.75em;
+  font-size: 1.3em;
 }
 
 .WordSection1 .MsoSubtitle,
@@ -403,7 +405,8 @@ pre code {
 .WordSection1 h5,
 .WordSection1 h6 {
   color: #ffffff;
-  font-size: 0.8em;
+  font-size: 0.75em;
+  line-height: 1.5em;
 }
 
 .WordSection1 h1 {
@@ -418,6 +421,35 @@ pre code {
   width: 6.25em;
 }
 
+.WordSection1 p:last-child {
+  bottom: 0;
+  position: absolute;
+  font-size: 0.6em;
+}
+
+.WordSection1 a {
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.WordSection1 a:hover {
+  border-bottom-color: transparent;
+  color: #8900e1 !important;
+  text-decoration: none;
+}
+
+.WordSection1 img {
+  border-radius: 100%;
+}
+
+/* Navigation */
+
+
 /* Main */
 
 .WordSection2,
@@ -429,5 +461,5 @@ pre code {
 .WordSection8,
 .WordSection9 {
   margin-left: 30%;
-  padding: 6em 3em 3em 3em;
+  padding: 0 3em 0 3em;
 }
