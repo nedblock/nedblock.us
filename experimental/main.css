@@ -448,6 +448,49 @@ pre code {
 }
 
 /* Navigation */
+.WordSection2 {
+    position: sticky;
+    height: 2em;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    /* background-color: black; */
+}
+
+.WordSection2 > ul {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  cursor: default;
+  list-style: none;
+  margin-left: -1em;
+  padding-left: 0;
+}
+
+.WordSection2 > ul li {
+  padding: 0;
+  vertical-align: middle;
+}
+
+.WordSection2>ul>li>a {
+  margin: 0 0.25em;
+  padding: 0.5em 0.6em;
+  text-decoration: none !important;
+  color: #000 !important;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+}
+
+.WordSection2>ul>li>a:hover {
+  border-bottom-color: transparent;
+  color: #8900e1 !important;
+  text-decoration: none;
+  border: 1px solid #8900e1;
+}
 
 
 /* Main */
