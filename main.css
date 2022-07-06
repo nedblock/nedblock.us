@@ -461,8 +461,7 @@ br {
     display: grid;
     align-items: center;
     justify-items: center;
-    padding-top: 0.75em !important;
-    padding-bottom: 0.75em !important;
+    padding: 0.75em 3em;
     /* background-color: black; */
 }
 
@@ -498,6 +497,13 @@ br {
   border: 1px solid #8900e1;
 }
 
+a#about, a#books, a#lectures, a#videos, a#publications, a#honors, a#teaching{
+  display: block;
+  position: relative;
+  top: -3.5em;
+  visibility: hidden;
+}
+
 
 /* Main */
 
@@ -510,5 +516,19 @@ br {
 .WordSection8,
 .WordSection9 {
   margin-left: 30%;
-  padding: 0 3em 0 3em;
+}
+
+.WordSection3 {
+  margin-top: 3.5em;
+}
+
+.WordSection3,
+.WordSection4,
+.WordSection5,
+.WordSection6,
+.WordSection7,
+.WordSection8,
+.WordSection9 {
+  padding: 3.5em 3em 0 3em;
+  margin-top: -3.5em;
 }
