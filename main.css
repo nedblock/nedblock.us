@@ -329,6 +329,10 @@ pre code {
   overflow-x: auto;
 }
 
+br {
+  display: none;
+}
+
 .align-left {
   text-align: left;
 }
@@ -450,13 +454,15 @@ pre code {
 /* Navigation */
 .WordSection2 {
     position: sticky;
-    height: 2em;
+    height: 3.5em;
     top: 0;
     background-color: white;
     z-index: 999;
     display: grid;
     align-items: center;
     justify-items: center;
+    padding-top: 0.75em !important;
+    padding-bottom: 0.75em !important;
     /* background-color: black; */
 }
 
