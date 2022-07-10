@@ -512,7 +512,13 @@ br {
   border: 1px solid #8900e1;
 }
 
-a#about, a#books, a#lectures, a#videos, a#publications, a#honors, a#teaching{
+a[name="_about"], 
+a[name="_books"],
+a[name="_lectures"],
+a[name="_videos"],
+a[name="_publications"],
+a[name="_honors"],
+a[name="_teaching"] {
   display: block;
   position: relative;
   top: -3.5em;
