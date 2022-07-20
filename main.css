@@ -553,3 +553,8 @@ a[name="_teaching"] {
   padding: 3.5em 3em 0 3em;
   margin-top: -3.5em;
 }
+
+/* Publications */
+.WordSection7 li {
+  margin-top: 1.5em !important;
+}
