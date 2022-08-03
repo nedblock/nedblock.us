@@ -554,6 +554,28 @@ a[name="_teaching"] {
   margin-top: -3.5em;
 }
 
+/* Books */
+.WordSection4 {
+  margin-bottom: 2em;
+}
+
+.WordSection4 > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  grid-column-gap: 1.25em;
+}
+
+.WordSection4 ul>li:last-child {
+  font-size:0.7em;
+}
+
+.WordSection4 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
 /* Publications */
 .WordSection7 li {
   margin-top: 1.5em !important;
