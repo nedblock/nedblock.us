@@ -537,6 +537,7 @@ a[name="_teaching"] {
 .WordSection8,
 .WordSection9 {
   margin-left: 30%;
+  min-width: 755px;
 }
 
 .WordSection3 {
@@ -559,14 +560,14 @@ a[name="_teaching"] {
   margin-bottom: 2em;
 }
 
-.WordSection4 > ul {
+.WordSection4 > ul:first-of-type {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style-type: none;
   grid-column-gap: 1.25em;
 }
 
-.WordSection4 ul>li:last-child {
+.WordSection4 ul:first-of-type>li:last-child {
   font-size:0.7em;
 }
 
