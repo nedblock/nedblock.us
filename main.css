@@ -577,6 +577,20 @@ a[name="_teaching"] {
   border-radius: 5px;
 }
 
+/* Videos */
+.WordSection6>ul:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+  grid-column-gap: 1.25em;
+}
+
+.WordSection6 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
 /* Publications */
 .WordSection7 li {
   margin-top: 1.5em !important;
