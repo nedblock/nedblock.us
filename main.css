@@ -517,12 +517,42 @@ a[name="_books"],
 a[name="_lectures"],
 a[name="_videos"],
 a[name="_publications"],
+a[name="_articles"],
 a[name="_honors"],
 a[name="_teaching"] {
   display: block;
   position: relative;
   top: -3.5em;
   visibility: hidden;
+}
+
+/* Second level Navigation */
+
+.WordSection2>ul ul {
+  display: none;
+  position: absolute;
+  margin-top: 0.25em;
+}
+
+.WordSection2>ul ul>li>a {
+  margin: 0 0.25em;
+  padding: 0.5em 0.6em;
+  text-decoration: none !important;
+  color: #000 !important;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.WordSection2>ul ul>li>a:hover {
+  border-bottom-color: transparent;
+  color: #8900e1 !important;
+  text-decoration: none;
+  border: 1px solid #8900e1;
+}
+
+.WordSection2 li:hover>ul {
+  display: block;
 }
 
 
