@@ -512,6 +512,7 @@ br {
   border: 1px solid #8900e1;
 }
 
+/* Hyperlink offset */
 a[name="_about"], 
 a[name="_books"],
 a[name="_lectures"],
@@ -528,8 +529,8 @@ a[name="_teaching"] {
 
 /* Second level Navigation */
 
-.WordSection2>ul ul {
-  display: none;
+a[href="#_articles"] {
+  display: none !important;
   position: absolute;
   margin-top: 0.25em;
 }
