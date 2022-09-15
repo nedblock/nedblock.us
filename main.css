@@ -529,15 +529,28 @@ a[name="_teaching"] {
 
 /* Second level Navigation */
 
-a[href="#_articles"] {
-  display: none !important;
+.WordSection2>ul ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
   position: absolute;
-  margin-top: 0.25em;
+  top:2.7em;
+}
+
+/* Display second level nav on hover */
+.WordSection2>ul ul:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.WordSection2 li:hover+ul {
+  visibility: visible;
+  opacity: 1;
 }
 
 .WordSection2>ul ul>li>a {
   margin: 0 0.25em;
-  padding: 0.5em 0.6em;
+  padding: 0.5em 10.6em;
   text-decoration: none !important;
   color: #000 !important;
   border: 1px solid gainsboro;
@@ -550,10 +563,6 @@ a[href="#_articles"] {
   color: #8900e1 !important;
   text-decoration: none;
   border: 1px solid #8900e1;
-}
-
-.WordSection2 li:hover>ul {
-  display: block;
 }
 
 
