@@ -186,7 +186,7 @@ body,
 input,
 select,
 textarea {
-  color: #999999;
+  color: #444444;
   font-family: "Source Sans Pro", Helvetica, sans-serif !important;
   font-size: 14pt !important;
   font-weight: 400 !important;
@@ -395,7 +395,7 @@ br {
     justify-content: space-between;
     background-color: #1f1815;
     background-attachment: scroll, scroll;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
     height: 100%;
     left: 0;
     padding: 5em 2em 7em 2.5em;
