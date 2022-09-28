@@ -683,9 +683,15 @@ a[name="_teaching"] {
   }
 }
 
-.WordSection4 ul:first-of-type>li:last-child {
-  font-size:0.7em;
+.WordSection4 ul:first-of-type>li {
+  font-size: 0.7em;
+  color: #999;
 }
+
+.WordSection4 ul:first-of-type>li>a {
+  font-size:1.25em !important;
+}
+
 
 .WordSection4 img {
   width: 100%;
