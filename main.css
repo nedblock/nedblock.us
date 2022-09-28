@@ -347,87 +347,6 @@ br {
 
 /* Header */
 
-@media only screen and (max-width: 768px) {
-  .WordSection1>p:first-child>span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .WordSection1 {
-    text-align: center;
-    padding-top: 1em;
-  }
-
-  .WordSection1 .MsoNormal {
-    color:rgba(255, 255, 255, 0.7)
-  }
-
-  .WordSection1 p:last-child {
-    visibility: hidden;
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .WordSection1 {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -moz-align-items: -moz-flex-end;
-    -webkit-align-items: -webkit-flex-end;
-    -ms-align-items: -ms-flex-end;
-    align-items: flex-end;
-    -moz-justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: space-between;
-    background-color: #1f1815;
-    background-attachment: scroll, scroll;
-    color: rgba(255, 255, 255, 0.7);
-    height: 100%;
-    left: 0;
-    padding: 5em 2em 7em 2.5em;
-    position: fixed;
-    text-align: right;
-    top: 0;
-    width: 25%;
-  }
-
-  .WordSection1>* {
-    -moz-flex-shrink: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-shrink: 0;
-    flex-shrink: 0;
-    width: 100%;
-  }
-
-  .WordSection1>.inner {
-    -moz-flex-grow: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-grow: 1;
-    flex-grow: 1;
-    margin: 0 0 2em 0;
-  }
-
-  .WordSection1 p:last-child {
-    bottom: 0;
-    position: absolute;
-    font-size: 0.6em;
-  }
-}
-
 .WordSection1 {
   background-image: url("images/overlay.png"), url("../../images/bg.jpg");
   background-position: top left, top left;
@@ -497,6 +416,94 @@ br {
   color: #ffffff;
   font-size: 0.75em;
   line-height: 1.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .WordSection1>p:first-child>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .WordSection1 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .WordSection1 .MsoNormal {
+    color:rgba(255, 255, 255, 0.7)
+  }
+
+  .WordSection1 p:nth-last-child(-n+3) {
+    visibility: hidden;
+    display: none;
+  }
+
+  .WordSection1 {
+    background-position: top left, top left;
+    background-repeat: repeat, repeat;
+    background-size: auto, 400%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .WordSection1 {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: -moz-flex-end;
+    -webkit-align-items: -webkit-flex-end;
+    -ms-align-items: -ms-flex-end;
+    align-items: flex-end;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    background-color: #1f1815;
+    background-attachment: scroll, scroll;
+    color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    left: 0;
+    padding: 5em 2em 7em 2.5em;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 25%;
+  }
+
+  .WordSection1>* {
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .WordSection1>.inner {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    margin: 0 0 2em 0;
+  }
+
+  .WordSection1 p:last-child {
+    bottom: 0;
+    position: absolute;
+    font-size: 0.6em;
+  }
 }
 
 /* Navigation */
@@ -653,7 +660,7 @@ a[name="_teaching"] {
   }
 
   .WordSection3 {
-    padding-top: 5em; 
+    padding-top: 5em;
   }
 }
 
@@ -671,7 +678,7 @@ a[name="_teaching"] {
 
 @media only screen and (max-width: 768px) {
   .WordSection4>ul:first-of-type {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.25em;
   }
 }
