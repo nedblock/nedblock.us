@@ -345,34 +345,253 @@ br {
   text-align: right;
 }
 
-/* Header */
+/* Navigation */
 
-.WordSection1 {
+@media only screen and (max-width: 768px) {
+  .WordSection1 {
+    background-color: #000;
+    box-shadow: 1px 1px 5px 0px #777777;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 2.3em;
+  }
+
+  .WordSection1>ul {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #000;
+    overflow: hidden;
+    top: 0;
+  }
+
+  .WordSection1>ul>li>a {
+    display: block;
+    padding: 15px;
+    color: #fff !important;
+  }
+  .WordSection1>ul>li>a:hover {
+    background-color: #777;
+  }
+
+  .WordSection1>ul ul li>a {
+    display: block;
+    padding: 15px;
+    color: #fff !important;
+  }
+
+  .WordSection1>ul ul li>a:hover {
+    background-color: #777;
+  }
+
+  .WordSection1>ul {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+  }
+
+  .hamberger {
+    position: sticky;
+    float: right;
+    padding: 20px 20px;
+    z-index: 1;
+    top: 0;
+  }
+
+  .hamb {
+    cursor: pointer;
+    float: right;
+    /* padding: 20px 20px; */
+  }
+  .hamb-line {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+  }
+  .hamb-line::before,
+  .hamb-line::after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  .hamb-line::before {
+    top: 5px;
+  }
+
+  .hamb-line::after {
+    top: -5px;
+  }
+
+  /* Hide checkbox */
+  .side-menu {
+    display: none;
+  }
+
+  /* Toggle Menu */
+  .side-menu:checked~#content .WordSection1>ul{
+    max-height: 100%;
+  }
+
+  .side-menu:checked~#content sup {
+    transition: visibility .2s ease-out;
+    visibility: hidden;
+  }
+
+  .side-menu:checked~.hamb .hamb-line {
+    background: transparent;
+  }
+
+  .side-menu:checked~.hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .side-menu:checked~.hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .hamberger {
+    display: none;
+    visibility: hidden;
+  }
+  .WordSection1 {
+    position: sticky;
+    height: 3.5em;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 0.75em 3em;
+    /* background-color: black; */
+  }
+
+  .WordSection1>ul {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    cursor: default;
+    list-style: none;
+    margin-left: -1em;
+    padding-left: 0;
+  }
+
+  .WordSection1>ul li {
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .WordSection1>ul>li>a {
+    margin: 0 0.25em;
+    padding: 0.5em 0.6em;
+    text-decoration: none !important;
+    color: #000 !important;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+  }
+
+  .WordSection1>ul>li>a:hover {
+    border-bottom-color: transparent;
+    color: #8900e1 !important;
+    text-decoration: none;
+    border: 1px solid #8900e1;
+  }
+
+  /* Second level Navigation */
+
+  .WordSection1>ul ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+    position: absolute;
+    top: 2.7em;
+  }
+
+  /* Display second level nav on hover */
+  .WordSection1>ul ul:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .WordSection1 li:hover+ul {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .WordSection1>ul ul>li>a {
+    margin: 0 0.25em;
+    padding: 0.5em 10.6em;
+    text-decoration: none !important;
+    color: #000 !important;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .WordSection1>ul ul>li>a:hover {
+    border-bottom-color: transparent;
+    color: #8900e1 !important;
+    text-decoration: none;
+    border: 1px solid #8900e1;
+  }
+}
+
+/* Hyperlink offset */
+a[name="_about"],
+a[name="_books"],
+a[name="_lectures"],
+a[name="_videos"],
+a[name="_publications"],
+a[name="_articles"],
+a[name="_honors"],
+a[name="_teaching"] {
+  display: block;
+  position: relative;
+  top: -3.5em;
+  visibility: hidden;
+}
+
+/* About Section */
+
+.WordSection2 {
   background-image: url("images/overlay.png"), url("../../images/bg.jpg");
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
   background-size: auto, 150%;
 }
 
-.WordSection1 .MsoTitle,
-.WordSection1 b {
+.WordSection2 .MsoTitle,
+.WordSection2 b {
   color: #ffffff;
   font-size: 1.3em;
 }
 
-.WordSection1 h1 {
+.WordSection2 h1 {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.75em;
   line-height: 1.75em;
   margin: 0;
 }
 
-.WordSection1 .image.avatar {
+.WordSection2 .image.avatar {
   margin: 0 0 1em 0;
   width: 6.25em;
 }
 
-.WordSection1 a {
+.WordSection2 a {
   -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -382,17 +601,17 @@ br {
   text-decoration: none !important;
 }
 
-.WordSection1 a:hover {
+.WordSection2 a:hover {
   border-bottom-color: transparent;
   color: #8900e1 !important;
   text-decoration: none;
 }
 
-.WordSection1>p:first-child {
+.WordSection2>p:first-child {
   margin-bottom: 1em;
 }
 
-.WordSection1>p:first-child>span {
+.WordSection2>p:first-child>span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,23 +622,23 @@ br {
   margin-left: auto;
 }
 
-.WordSection1 img {
+.WordSection2 img {
   height: 100%;
 }
 
-.WordSection1 .MsoSubtitle,
-.WordSection1 h2,
-.WordSection1 h3,
-.WordSection1 h4,
-.WordSection1 h5,
-.WordSection1 h6 {
+.WordSection2 .MsoSubtitle,
+.WordSection2 h2,
+.WordSection2 h3,
+.WordSection2 h4,
+.WordSection2 h5,
+.WordSection2 h6 {
   color: #ffffff;
   font-size: 0.75em;
   line-height: 1.5em;
 }
 
 @media only screen and (max-width: 768px) {
-  .WordSection1>p:first-child>span {
+  .WordSection2>p:first-child>span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -431,22 +650,22 @@ br {
     margin-right: auto;
   }
 
-  .WordSection1 {
+  .WordSection2 {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
   }
 
-  .WordSection1 .MsoNormal {
+  .WordSection2 .MsoNormal {
     color:rgba(255, 255, 255, 0.7)
   }
 
-  .WordSection1 p:nth-last-child(-n+3) {
+  .WordSection2 p:nth-last-child(-n+3) {
     visibility: hidden;
     display: none;
   }
 
-  .WordSection1 {
+  .WordSection2 {
     background-position: top left, top left;
     background-repeat: repeat, repeat;
     background-size: auto, 400%;
@@ -454,7 +673,7 @@ br {
 }
 
 @media only screen and (min-width: 768px) {
-  .WordSection1 {
+  .WordSection2 {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -483,7 +702,7 @@ br {
     width: 25%;
   }
 
-  .WordSection1>* {
+  .WordSection2>* {
     -moz-flex-shrink: 0;
     -webkit-flex-shrink: 0;
     -ms-flex-shrink: 0;
@@ -491,7 +710,7 @@ br {
     width: 100%;
   }
 
-  .WordSection1>.inner {
+  .WordSection2>.inner {
     -moz-flex-grow: 1;
     -webkit-flex-grow: 1;
     -ms-flex-grow: 1;
@@ -499,127 +718,18 @@ br {
     margin: 0 0 2em 0;
   }
 
-  .WordSection1 p:last-child {
+  .WordSection2 p:last-child {
     bottom: 0;
     position: absolute;
     font-size: 0.6em;
   }
 }
 
-/* Navigation */
-
-@media only screen and (max-width: 768px) {
-  .WordSection2 {
-    visibility: hidden;
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .WordSection2 {
-    position: sticky;
-    height: 3.5em;
-    top: 0;
-    background-color: white;
-    z-index: 999;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    padding: 0.75em 3em;
-    /* background-color: black; */
-  }
-
-  .WordSection2 > ul {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    cursor: default;
-    list-style: none;
-    margin-left: -1em;
-    padding-left: 0;
-  }
-
-  .WordSection2 > ul li {
-    padding: 0;
-    vertical-align: middle;
-  }
-
-  .WordSection2>ul>li>a {
-    margin: 0 0.25em;
-    padding: 0.5em 0.6em;
-    text-decoration: none !important;
-    color: #000 !important;
-    border: 1px solid gainsboro;
-    border-radius: 4px;
-  }
-
-  .WordSection2>ul>li>a:hover {
-    border-bottom-color: transparent;
-    color: #8900e1 !important;
-    text-decoration: none;
-    border: 1px solid #8900e1;
-  }
-}
-
-/* Hyperlink offset */
-a[name="_about"], 
-a[name="_books"],
-a[name="_lectures"],
-a[name="_videos"],
-a[name="_publications"],
-a[name="_articles"],
-a[name="_honors"],
-a[name="_teaching"] {
-  display: block;
-  position: relative;
-  top: -3.5em;
-  visibility: hidden;
-}
-
-/* Second level Navigation */
-
-.WordSection2>ul ul {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.3s linear;
-  position: absolute;
-  top:2.7em;
-}
-
-/* Display second level nav on hover */
-.WordSection2>ul ul:hover {
-  visibility: visible;
-  opacity: 1;
-}
-
-.WordSection2 li:hover+ul {
-  visibility: visible;
-  opacity: 1;
-}
-
-.WordSection2>ul ul>li>a {
-  margin: 0 0.25em;
-  padding: 0.5em 10.6em;
-  text-decoration: none !important;
-  color: #000 !important;
-  border: 1px solid gainsboro;
-  border-radius: 4px;
-  background-color: white;
-}
-
-.WordSection2>ul ul>li>a:hover {
-  border-bottom-color: transparent;
-  color: #8900e1 !important;
-  text-decoration: none;
-  border: 1px solid #8900e1;
-}
-
 
 /* Main */
 
 @media only screen and (min-width: 768px) {
-  .WordSection2,
+  .WordSection1,
   .WordSection3,
   .WordSection4,
   .WordSection5,
